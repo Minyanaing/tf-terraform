@@ -4,7 +4,8 @@ locals {
 
   # One entry per repo (in tf-github) that needs its own TFC workspace.
   repo_workspaces = {
-    "tf-github" = { name = "terraform-github" }
+    "tf-github"    = { name = "terraform-github" }
+    "tf-terraform" = { name = "terraform-infra" }
   }
 }
 
