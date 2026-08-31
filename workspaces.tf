@@ -5,7 +5,7 @@ locals {
   # `project` must match a key in local.projects (projects.tf) — auto_apply
   # is inherited from that project's setting unless overridden here.
   repo_workspaces = {
-    "tf-github"    = { name = "terraform-github", project = "default", auto_apply = true }
+    "tf-github"    = { name = "terraform-github", project = "default", auto_apply = false }
     "tf-terraform" = { name = "terraform-infra", project = "default", auto_apply = false}
     # "data-platform" = { name = "data-platform", project = "default" }
     # "some-repo"     = { name = "some-workspace", project = "default", auto_apply = false }
