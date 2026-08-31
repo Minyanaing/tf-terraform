@@ -2,6 +2,8 @@
 
 Manages Terraform Cloud itself — projects, teams, users/access, and workspaces (including its own) — run through TFC workspace `terraform-infra`.
 
+Full step-by-step setup guide (folder creation → tokens → console setup → first apply): [FULL_README.md](https://github.com/Minyanaing/tf-terraform/blob/main/FULL_README.md)
+
 ## Files
 
 | File | Purpose |

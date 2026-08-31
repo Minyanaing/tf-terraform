@@ -9,7 +9,9 @@
 
 `tf-terraform` manages `tf-github`'s workspace (and its own, self-referentially). Both VCS-driven: PR → speculative plan → merge → auto-apply.
 
-Per-repo setup detail: [tf-github/README.md](tf-github/README.md), [tf-terraform/README.md](tf-terraform/README.md).
+Per-repo setup detail: 
+- [tf-github/README.md](https://github.com/Minyanaing/tf-github/blob/main/README.md)
+- [tf-terraform/README.md](https://github.com/Minyanaing/tf-terraform/blob/main/README.md)
 
 Every step below states **Where:** — the exact folder to run commands in, or "Console" for browser-based setup. There are three possible locations throughout: the parent folder (containing both repos), `tf-github/`, and `tf-terraform/` — they are never interchangeable.
 
@@ -163,7 +165,7 @@ terraform plan
 
 ## Step 8 — Build out `tf-github`
 
-**Where:** `tf-github/repo_list.tf` (data you edit) and `tf-github/repo.tf` (resource logic, rarely touched) — see [tf-github/README.md](tf-github/README.md) for the full field reference.
+**Where:** `tf-github/repo_list.tf` (data you edit) and `tf-github/repo.tf` (resource logic, rarely touched) — see [tf-github/README.md](https://github.com/Minyanaing/tf-github/blob/main/README.md) for the full field reference.
 
 ## Step 9 — Import existing repos (they already exist on GitHub from Step 1)
 
@@ -178,7 +180,7 @@ terraform plan
 
 ## Step 10 — Build out `tf-terraform`
 
-**Where:** `tf-terraform/projects.tf`, `tf-terraform/teams.tf`, `tf-terraform/access.tf`, `tf-terraform/workspaces.tf` — all data-driven from `local` maps. See [tf-terraform/README.md](tf-terraform/README.md) for the full field reference.
+**Where:** `tf-terraform/projects.tf`, `tf-terraform/teams.tf`, `tf-terraform/access.tf`, `tf-terraform/workspaces.tf` — all data-driven from `local` maps. See [tf-terraform/README.md](https://github.com/Minyanaing/tf-terraform/blob/main/README.md) for the full field reference.
 
 ## Step 11 — Link workspaces to VCS
 
