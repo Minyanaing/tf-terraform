@@ -1,7 +1,8 @@
 locals {
   # Teams and their org-level permissions.
   teams = {
-    # "developers" = { visibility = "organization" }
+    # "developers"      = { visibility = "organization" }
+    # "local-plan-only" = { visibility = "organization" }  # example: scope a team to plan-only, see workspaces.tf
   }
 
   # team_name => list of user emails to add as members.
